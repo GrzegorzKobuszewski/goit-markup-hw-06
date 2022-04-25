@@ -432,6 +432,29 @@
                         </li>
                     </ul>
             </div>
+
+            <div class="footer-newsletter">
+                <h3 class="footer-newsletter-title">Zapisz się do newslettera</h3>
+                    <div class="footer-newsletter-form-container">
+                        <form class="footer-newsletter-form">
+                            <label class="footer-newsletter-label">
+                                <input
+                                    class="footer-newsletter-input"
+                                    type="email"
+                                    name="email"
+                                    placeholder="E-mail"
+                                />
+                            </label>
+                        </form>
+                        <button type="submit" class="sign-up-button button">Zapisz się
+                            <svg class="sign-up-button-icon" width="24" height="24">
+                                <use href="images/icons.svg#icon-form-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+            </div>
+
+
         </div>
     </footer>
 
@@ -440,6 +463,77 @@
             <svg class="close-button" data-modal-close>
                 <use href="images/icons.svg#icon-close"></use>
             </svg>
+            <p class="modal-title">
+                Zostaw swoje dane w formularzu poniżej
+            </p>
+            <form class="modal-form">
+                <label class="modal-form-label modal-form-label-name"> 
+                    Imie
+                    <span class="modal-form-input-wrapper">
+                        <input 
+                            class="modal-form-input modal-form-input-name"
+                            type="text"
+                            name="name"
+                            placeholder=""/>
+                        <svg class="modal-form-icon" width="18" height="18">
+                            <use href="images/icons.svg#icon-form-01-person"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label class="modal-form-label modal-form-label-phone">
+                    Telefon
+                    <span class="modal-form-input-wrapper">
+                        <input 
+                            class="modal-form-input modal-form-input-phone" 
+                            type="tel"
+                            name="phone"
+                            placeholder="" />
+                        <svg class="modal-form-icon" width="18" height="18">
+                            <use href="images/icons.svg#icon-form-02-phone"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label class="modal-form-label modal-form-label-email"> 
+                    E-mail
+                    <span class="modal-form-input-wrapper">
+                        <input 
+                            class="modal-form-input modal-form-input-email"
+                            type="email"
+                            name="email"
+                            placeholder=""/>
+                        <svg class="modal-form-icon" width="18" height="18">
+                            <use href="images/icons.svg#icon-form-03-email"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label class="modal-form-label modal-form-label-message">
+                    Komentarz
+                    <span class="modal-form-message-wrapper">
+                    <textarea
+                        class="modal-form-message"
+                        name="message" 
+                        rows="10" 
+                        placeholder="Wprowadź tekst">
+                    </textarea>
+                    </span>
+                </label>
+
+                <span class="modal-form-policy-wrapper">
+                    <input id="policy" type="checkbox" name="policy" class="modal-form-policy hidden" value="policy">
+                    <label for="policy" class="modal-form-policy-label">
+                        Oświadczam iż akceptuję 
+                        <a href="#" class="policy-link">Regulamin</a> i 
+                        <a href="#" class="policy-link">Politykę Prywatności.</a>
+                    </label>
+                </span>
+
+                <button class="modal-form-button button" type="submit">Wyślij</button>
+
+            </form>
+
         </div>
     </div>
 
